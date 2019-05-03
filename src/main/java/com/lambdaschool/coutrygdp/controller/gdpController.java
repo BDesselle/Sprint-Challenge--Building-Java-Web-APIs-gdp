@@ -3,7 +3,6 @@ package com.lambdaschool.coutrygdp.controller;
 import com.lambdaschool.coutrygdp.CoutrygdpApplication;
 import com.lambdaschool.coutrygdp.exceptions.NotFound;
 import com.lambdaschool.coutrygdp.model.GDP;
-//import com.lambdaschool.projectrestdogs.exceptions.ResourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
