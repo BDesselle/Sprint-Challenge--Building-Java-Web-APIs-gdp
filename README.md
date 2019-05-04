@@ -160,3 +160,5 @@ gdpList.add(new GDP("Bahrain","39300"));
 gdpList.add(new GDP("Cameroon","38445"));  
 gdpList.add(new GDP("Latvia","34286"));  
 gdpList.add(new GDP("Sudan","33249"));  
+
+{}
