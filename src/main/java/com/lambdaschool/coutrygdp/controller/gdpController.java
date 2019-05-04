@@ -20,7 +20,7 @@ public class gdpController {
     @GetMapping(value = "/gdp")
     public ResponseEntity<?> getAllGDPs()
     {
-        logger.info("all the damn gdps your beautiful heart could imagine");
+        logger.info("Currently displaying all GDPs");
         return new ResponseEntity<>(CoutrygdpApplication.ourGDPList.gdpList, HttpStatus.OK);
     }
 
@@ -28,11 +28,11 @@ public class gdpController {
     public ResponseEntity<?> getGDPDetail(@PathVariable long id)
     {
         GDP rtnGDP;
-        logger.info("you're looking at gdp - " + id + " you filthy animal");
+        logger.info("GDP - " + id + " is now being displayed.");
 
         if ((CoutrygdpApplication.ourGDPList.findGDP(e -> (e.getId()) == id)) == null) {
 
-            throw new NotFound(id + "ain't no gdp silly");
+            throw new NotFound(id + "No such GDP exists");
 
         } else {
 
